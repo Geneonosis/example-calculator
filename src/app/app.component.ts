@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { helpers } from './helper';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'example-calculator';
+  public hello:string = '';
+  public testButton: boolean = false;
+
+  constructor(public helper:helpers){
+
+  }
+
+  
 }
